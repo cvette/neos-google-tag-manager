@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/cvette/lipsum/v/stable)](https://packagist.org/packages/cvette/lipsum) [![Total Downloads](https://poser.pugx.org/cvette/lipsum/downloads)](https://packagist.org/packages/cvette/lipsum) [![License](https://poser.pugx.org/cvette/lipsum/license)](https://packagist.org/packages/cvette/lipsum)
+[![Latest Stable Version](https://poser.pugx.org/cvette/lipsum/v/stable)](https://packagist.org/packages/cvette/google-tag-manager) [![Total Downloads](https://poser.pugx.org/cvette/lipsum/downloads)](https://packagist.org/packages/cvette/google-tag-manager) [![License](https://poser.pugx.org/cvette/lipsum/license)](https://packagist.org/packages/cvette/google-tag-manager)
 
 # Google Tag Manager Neos Plugin
 
