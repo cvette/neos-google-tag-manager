@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="Vette.GoogleTagManager" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+            <trans-unit id="groups.googleTagManager" xml:space="preserve">
+				<source>Google Tag Manager</source>
+				<target xml:lang="de">Google Tag Manager</target>
+			</trans-unit>
+			<trans-unit id="properties.containerId" xml:space="preserve">
+				<source>Container ID</source>
+				<target xml:lang="de">Container ID</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

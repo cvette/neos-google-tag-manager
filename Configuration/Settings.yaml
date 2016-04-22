@@ -1,0 +1,9 @@
+TYPO3:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          'Vette.GoogleTagManager': ['NodeTypes/*']
+    typoScript:
+      autoInclude:
+        'Vette.GoogleTagManager': TRUE
