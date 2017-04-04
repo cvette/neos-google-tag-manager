@@ -1,20 +1,37 @@
 {
     "name": "cvette/google-tag-manager",
-    "type": "typo3-flow-plugin",
-    "description": "This package includes a TypoScript prototype, as well as a node type mixin for simple integration of the Google Tag Manager container code into your Neos CMS project.",
+    "type": "neos-plugin",
+    "description": "This package includes a Fusion prototype, as well as a node type mixin for simple integration of the Google Tag Manager container code into your Neos CMS project.",
     "license": "GPL-3.0+",
-	"keywords": [ "google", "tag", "manager", "seo", "neos", "flow" ],
-	"authors": [
-		{
-			"name": "Christian Vette"
-		}
-	],
-	"require": {
-		"typo3/neos": ">=2.0"
-	},
+    "keywords": [
+        "google",
+        "tag",
+        "manager",
+        "seo",
+        "neos",
+        "flow"
+    ],
+    "authors": [
+        {
+            "name": "Christian Vette",
+            "email": "neos@christianvette.de",
+            "homepage": "",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "neos/neos": "~3.0.0"
+    },
     "autoload": {
-        "psr-0": {
-            "Vette\\GoogleTagManager": "Classes"
+        "psr-4": {
+            "Vette\\GoogleTagManager\\": "Classes"
+        }
+    },
+    "extra": {
+        "marketplace-account": "neos@christianvette.de",
+        "installer-name": "Vette.GoogleTagManager",
+        "neos": {
+            "package-key": "Vette.GoogleTagManager"
         }
     }
 }

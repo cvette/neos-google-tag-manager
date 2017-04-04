@@ -1,0 +1,3 @@
+prototype(Vette.GoogleTagManager:ContainerNoScript) < prototype(Vette.GoogleTagManager:ContainerBase){
+    templatePath = 'resource://Vette.GoogleTagManager/Private/Templates/Fusion/ContainerNoScript.html'
+}

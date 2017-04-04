@@ -1,9 +1,11 @@
-TYPO3:
+
+Neos:
   Neos:
     userInterface:
       translation:
         autoInclude:
-          'Vette.GoogleTagManager': ['NodeTypes/*']
-    typoScript:
+          Vette.GoogleTagManager:
+            - 'NodeTypes/*'
+    fusion:
       autoInclude:
-        'Vette.GoogleTagManager': TRUE
+        Vette.GoogleTagManager: true

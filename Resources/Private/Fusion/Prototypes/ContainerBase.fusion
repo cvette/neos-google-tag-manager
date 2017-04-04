@@ -1,0 +1,5 @@
+prototype(Vette.GoogleTagManager:ContainerBase) < prototype(Neos.Fusion:Template) {
+    containerId = ${q(site).property('containerId')}
+    @if.onlyRenderInFrontend = ${!node.context.inBackend}
+    @if.onlyRenderInProduction = ${String.startsWith(Configuration.setting('Neos.Flow.core.context'), 'Production')}
+}
