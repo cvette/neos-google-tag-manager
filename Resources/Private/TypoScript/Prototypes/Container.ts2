@@ -1,5 +1,0 @@
-prototype(Vette.GoogleTagManager:Container) < prototype(TYPO3.TypoScript:Template){
-    containerId = ${null}
-    templatePath = 'resource://Vette.GoogleTagManager/Private/Templates/TypoScript/Container.html'
-    @if.includeContainerCode = ${String.startsWith(Configuration.setting('TYPO3.Flow.core.context'), 'Production')}
-}
