@@ -2,29 +2,32 @@
 
 # Google Tag Manager Neos Plugin
 
-This package includes a TypoScript prototype, as well as a node type mixin for simple integration of the Google Tag Manager container code into your Neos CMS project.
+This package includes Fusion prototypes, as well as a node type mixin for simple integration of the Google Tag Manager container code into your Neos CMS project.
 
 ## Usage
 
-The following TypoScript adds the container directly after the opening body tag of your pages. By default the container is only included in Production context.
+The following Fusion snippet adds the container script directly after the opening head tag and the fallback code directly after the body tag of your pages. By default the container is only included in Production context and the frontend.
 
-    prototype(TYPO3.Neos:Page)
-        googleTagManager = Vette.GoogleTagManager:Container {
-            containerId = 'GTM-...'
-            @position = 'before body'
-        }
-    }
-    
-Getting the container id from settings is possible with this EEL expression: ```${Configuration.setting('Your.Package.containerId')}```
+    tagManagerScript = Vette.GoogleTagManager:ContainerScript {
+		@position = 'before head'
+	}
 
-The container mixin can be used to add a containerId property to your site node type.
+	tagManagerNoScript = Vette.GoogleTagManager:ContainerNoScript {
+		@position = 'before body'
+	}
+   
+The default Fusion code gets the container ID from a property 'containerId' of the site node. You can use the ContainerMixin to add the property to your site node.
 
     Your.Package:Site:
         superTypes:
             Vette.GoogleTagManager:ContainerMixin: TRUE
-            ...
-
-You can then get the container id with this EEL expression: ```${q(site).properties.containerId}```
+   
+### Getting the container ID from settings
+By overwriting the ContainerBase prototype you can get the container ID from settings or any other EEL expression.
+    
+    prototype(Vette.GoogleTagManager:ContainerBase) {
+        containerId = ${Configuration.setting('Your.Package.containerId')}
+    }      ...
 
 ## License
 
