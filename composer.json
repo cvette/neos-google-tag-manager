@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "neos/neos": "~4.0"
+        "neos/neos": "~4.1"
     },
     "autoload": {
         "psr-4": {
